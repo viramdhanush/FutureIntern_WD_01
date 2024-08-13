@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+    <header>
+        <h1>Welcome to My Landing Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This landing page is one of the best web development projects for beginners.</p>
+            <p>This project demands a foundational understanding of HTML and CSS.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="columns">
+                <div class="column">
+                    <h3>Web Design</h3>
+                    <p>You will learn how to add columns, divide sections, arrange items, add headers, and footers.</p>
+                </div>
+                <div class="column">
+                    <h3>Creative Design</h3>
+                    <p>Most importantly, you will use your creativity to make the page look impressive.</p>
+                </div>
+                <div class="column">
+                    <h3>Responsive Layout</h3>
+                    <p>Use CSS carefully to make sure the elements on the page do not overlap.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For more information, please get in touch!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Landing Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
